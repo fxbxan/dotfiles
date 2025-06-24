@@ -7,7 +7,9 @@ return {
 		"folke/snacks.nvim",
 		priority = 1000,
 		lazy = false,
-		opts = {},
+		opts = {
+			dashboard = {},
+		},
 	},
 	keys = {
 		-- 👇 in this section, choose your own keymappings!
