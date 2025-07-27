@@ -14,7 +14,11 @@ return {
 			{ "j-hui/fidget.nvim", opts = {} },
 
 			-- Allows extra capabilities provided by blink.cmp
-			"saghen/blink.cmp",
+			{
+				"saghen/blink.cmp",
+				version = "1.*",
+				opts = {},
+			},
 		},
 	},
 }
