@@ -2,7 +2,7 @@
 require("config.lazy")
 require("config.keymappings")
 require("config.options")
-
+require("oil").setup()
 -- To do: move vue configs to seperate files --
 local vue_language_server_path = vim.fn.expand("$MASON/packages")
 	.. "/vue-language-server"
@@ -27,5 +27,4 @@ vim.lsp.config("vtsls", {
 	},
 	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 })
-vim.lsp.enable({ "lua_ls", "vtsls", "vue_ls" })
-
+vim.lsp.enable({ "lua_ls", "vtsls", "vue_ls", "eslint" })
