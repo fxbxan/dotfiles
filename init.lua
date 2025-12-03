@@ -2,7 +2,6 @@
 require("config.lazy")
 require("config.keymappings")
 require("config.options")
-require("oil").setup()
 -- To do: move vue configs to seperate files --
 local vue_language_server_path = vim.fn.expand("$MASON/packages")
 	.. "/vue-language-server"
